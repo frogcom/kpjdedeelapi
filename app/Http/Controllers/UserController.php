@@ -48,7 +48,7 @@ class UserController extends Controller
             'password'=>'required',
         ]);
 
-        User::create($request->all());
+        // User::create($request->all());
         
         $user = User::create($request->all());
 

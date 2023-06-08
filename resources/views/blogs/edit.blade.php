@@ -23,7 +23,7 @@
         </div>
     @endif
   
-    <form action="{{ route('blogs.update',$blogs->id) }}" method="POST">
+    <form action="{{ route('blogs.update',$blog->id) }}" method="POST">
         @csrf
         @method('PUT')
    
@@ -31,13 +31,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>title:</strong>
-                    <input type="text" name="title" value="{{ $blogs->title }}" class="form-control" placeholder="title">
+                    <input type="text" name="title" value="{{ $blog->title }}" class="form-control" placeholder="title">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>body:</strong>
-                    <textarea class="form-control" style="height:150px" name="body" placeholder="Body">{{ $blogs->body }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="body" placeholder="Body">{{ $blog->body }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

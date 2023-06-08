@@ -100,7 +100,7 @@ class BlogController extends Controller
 
         $blog->update($request->all());
 
-        return redirect()->route('blog.index')
+        return redirect()->route('blogs.index')
         ->with('success', 'blog updated successfully');
         return [
             "status" => 1,
